@@ -1,0 +1,311 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>zBamboo Free Html5 Responsive Template</title>
+	<meta name="description" content="Free Html5 Templates and Free Responsive Themes Designed by Kimmy | zerotheme.com">
+	<meta name="author" content="www.zerotheme.com">
+	
+    <!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/zerogrid.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/responsiveslides.css" />
+	
+	<!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+		<script src="js/css3-mediaqueries.js"></script>
+	<![endif]-->
+	
+	<link href='./images/favicon.ico' rel='icon' type='image/x-icon'/>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/responsiveslides.js"></script>
+	<script>
+    $(function () {
+      $("#slider").responsiveSlides({
+        auto: true,
+        pager: false,
+        nav: true,
+        speed: 500,
+        maxwidth: 960,
+        namespace: "centered-btns"
+      });
+    });
+  </script>
+    
+</head>
+<body>
+<!--------------Header--------------->
+<header> 
+	<div id="logo"><a href=""><img src="./images/logo.png"/></a></div>
+	<div id="search">
+		<div class="button-search"></div>
+		<input type="text" value="Search..." onfocus="if (this.value == &#39;Search...&#39;) {this.value = &#39;&#39;;}" onblur="if (this.value == &#39;&#39;) {this.value = &#39;Search...&#39;;}">
+	</div>
+</header>
+
+<!--------------Navigation--------------->
+
+<nav>
+	<ul>
+		<li><a href="index.html">Главная</a></li>
+		<li><a href="blog.html">Новости</a></li>
+		<li><a href="gallery.html">Центры цунами</a></li>
+		<li><a href="single.html">События</a></li>
+		<li><a href="single.html">Документы</a></li>
+		<li><a href="single.html">О нас</a></li>
+	</ul>
+</nav>
+
+<section id="content">
+	<div class="zerogrid">
+		<div class="row">
+			<div class="main-content">
+<script src="http://api-maps.yandex.ru/1.1/index.xml?key=AGyX9E4BAAAAim7sCQIAtsKR00u7pVu18ptTVfuvEwQZ29IAAAAAAAAAAABeimZbviTr1BAGTPCzlraAq3DXTQ==" type="text/javascript"></script>
+<div id="main">
+  <div id="YMapsID" style="height: 600px; width: 920px;"> </div>
+  <div><script type="text/javascript">
+		// Создание обработчика для события window.onLoad
+		YMaps.jQuery(function () {
+		// Создание экземпляра карты и его привязка к созданному контейнеру
+		var map = new YMaps.Map(YMaps.jQuery("#YMapsID")[0]);
+		// Установка для карты ее центра и масштаба
+		map.setCenter(new YMaps.GeoPoint(142.691357,50.190989), 4, YMaps.MapType.MAP);
+		// Добавление оверлеев
+//		map.enableScrollZoom();
+//		var typeControl = new YMaps.TypeControl([YMaps.MapType.MAP]);
+//		map.addControl(typeControl);
+		map.addControl(new YMaps.Zoom());
+		// Создание шаблона для значка метки
+		var template = new YMaps.Template("<div>\
+		<img alt=\"\" style=\"height:$[style.iconStyle.size.y];width:$[style.iconStyle.size.x];\" src=\"$[style.iconStyle.href]\"\/>\
+		<div class=\"CustomPointName\">$[description|0]</div></div>");
+		// Создание стиля для значка метки с использованием шаблона
+		var s = new YMaps.Style();
+		s.iconStyle = new YMaps.IconStyle(template);
+		s.iconStyle.offset = new YMaps.Point(-6, -12);
+		s.iconStyle.href = "/images/arrow.png";
+		s.iconStyle.size = new YMaps.Point(12, 12);
+		YMaps.Styles.add("example#customPoint", s);
+		// Опредление области обзора карты и связанных с ней параметров
+		var bounds = new YMaps.GeoCollectionBounds();
+	var placemark129 = new YMaps.Placemark(new YMaps.GeoPoint(138.333,46.533),{style: "example#customPoint"});
+				placemark129.name="\<a href=\"sea-level/sosunovo\">31866 - Пост измерений уровня моря «Сосуново»\<\/a>";
+				placemark129.description="";
+				placemark129.setBalloonContent("\<a href=\"sea-level/sosunovo\">31866 - Пост измерений уровня моря «Сосуново»\<\/a>");
+				map.addOverlay(placemark129);
+	//bounds.add(new YMaps.GeoPoint(138.333,46.533);
+	var placemark130 = new YMaps.Placemark(new YMaps.GeoPoint(135.830,44.367),{style: "example#customPoint"});
+				placemark130.name="\<a href=\"sea-level/rud-pristan\">31959 - Пост измерений уровня моря «Рудная Пристань»\<\/a>";
+				placemark130.description="";
+				placemark130.setBalloonContent("\<a href=\"sea-level/rud-pristan\">31959 - Пост измерений уровня моря «Рудная Пристань»\<\/a>");
+				map.addOverlay(placemark130);
+	//bounds.add(new YMaps.GeoPoint(135.830,44.367);
+	var placemark133 = new YMaps.Placemark(new YMaps.GeoPoint(158.650,52.983),{style: "example#customPoint"});
+				placemark133.name="\<a href=\"sea-level/petr-kamch\">32540 - Пост измерений уровня моря «Петропавловск-Камчатский»\<\/a>";
+				placemark133.description="";
+				placemark133.setBalloonContent("\<a href=\"sea-level/petr-kamch\">32540 - Пост измерений уровня моря «Петропавловск-Камчатский»\<\/a>");
+				map.addOverlay(placemark133);
+	//bounds.add(new YMaps.GeoPoint(158.650,52.983);
+	var placemark134 = new YMaps.Placemark(new YMaps.GeoPoint(165.983,55.200),{style: "example#customPoint"});
+				placemark134.name="\<a href=\"sea-level/nikolskoe\">32618 - Пост измерений уровня моря «Никольское»\<\/a>";
+				placemark134.description="";
+				placemark134.setBalloonContent("\<a href=\"sea-level/nikolskoe\">32618 - Пост измерений уровня моря «Никольское»\<\/a>");
+				map.addOverlay(placemark134);
+	//bounds.add(new YMaps.GeoPoint(165.983,55.200);
+	var placemark135 = new YMaps.Placemark(new YMaps.GeoPoint(159.983,54.117),{style: "example#customPoint"});
+				placemark135.name="\<a href=\"sea-level/semyachik\">32509 - Пост измерений уровня моря «Семячик»\<\/a>";
+				placemark135.description="";
+				placemark135.setBalloonContent("\<a href=\"sea-level/semyachik\">32509 - Пост измерений уровня моря «Семячик»\<\/a>");
+				map.addOverlay(placemark135);
+	//bounds.add(new YMaps.GeoPoint(159.983,54.117);
+	var placemark136 = new YMaps.Placemark(new YMaps.GeoPoint(158.067,51.833),{style: "example#customPoint"});
+				placemark136.name="\<a href=\"sea-level/vodopodnaya\">32596 - Пост измерений уровня моря «Водопадная»\<\/a>";
+				placemark136.description="";
+				placemark136.setBalloonContent("\<a href=\"sea-level/vodopodnaya\">32596 - Пост измерений уровня моря «Водопадная»\<\/a>");
+				map.addOverlay(placemark136);
+	//bounds.add(new YMaps.GeoPoint(158.067,51.833);
+	var placemark137 = new YMaps.Placemark(new YMaps.GeoPoint(133.900,42.900),{style: "example#customPoint"});
+				placemark137.name="\<a href=\"sea-level/preobragenie\">31989 - Пост измерений уровня моря «Преображение»\<\/a>";
+				placemark137.description="";
+				placemark137.setBalloonContent("\<a href=\"sea-level/preobragenie\">31989 - Пост измерений уровня моря «Преображение»\<\/a>");
+				map.addOverlay(placemark137);
+	//bounds.add(new YMaps.GeoPoint(133.900,42.900);
+	var placemark138 = new YMaps.Placemark(new YMaps.GeoPoint(166.075,60.430),{style: "example#customPoint"});
+				placemark138.name="\<a href=\"sea-level/korf\">25954 - Пост измерений уровня моря «Корф (Тиличики)»\<\/a>";
+				placemark138.description="";
+				placemark138.setBalloonContent("\<a href=\"sea-level/korf\">25954 - Пост измерений уровня моря «Корф (Тиличики)»\<\/a>");
+				map.addOverlay(placemark138);
+	//bounds.add(new YMaps.GeoPoint(166.075,60.430);
+	var placemark141 = new YMaps.Placemark(new YMaps.GeoPoint(140.291,48.970),{style: "example#customPoint"});
+				placemark141.name="\<a href=\"sea-level/sovet-gavan\">31770 - Пост измерений уровня моря «Советская гавань»\<\/a>";
+				placemark141.description="";
+				placemark141.setBalloonContent("\<a href=\"sea-level/sovet-gavan\">31770 - Пост измерений уровня моря «Советская гавань»\<\/a>");
+				map.addOverlay(placemark141);
+	//bounds.add(new YMaps.GeoPoint(140.291,48.970);
+	var placemark142 = new YMaps.Placemark(new YMaps.GeoPoint(132.920,42.800),{style: "example#customPoint"});
+				placemark142.name="\<a href=\"sea-level/nahodka\">31970 - Пост измерений уровня моря «Находка»\<\/a>";
+				placemark142.description="";
+				placemark142.setBalloonContent("\<a href=\"sea-level/nahodka\">31970 - Пост измерений уровня моря «Находка»\<\/a>");
+				map.addOverlay(placemark142);
+	//bounds.add(new YMaps.GeoPoint(132.920,42.800);
+	var placemark143 = new YMaps.Placemark(new YMaps.GeoPoint(163.063,59.247),{style: "example#customPoint"});
+				placemark143.name="\<a href=\"sea-level/ossora\">32246 - Пост измерений уровня моря «Оссора»\<\/a>";
+				placemark143.description="";
+				placemark143.setBalloonContent("\<a href=\"sea-level/ossora\">32246 - Пост измерений уровня моря «Оссора»\<\/a>");
+				map.addOverlay(placemark143);
+	//bounds.add(new YMaps.GeoPoint(163.063,59.247);
+	var placemark144 = new YMaps.Placemark(new YMaps.GeoPoint(131.900,43.110),{style: "example#customPoint"});
+				placemark144.name="\<a href=\"sea-level/vladivostok\">31960 - Пост измерений уровня моря «Владивосток»\<\/a>";
+				placemark144.description="";
+				placemark144.setBalloonContent("\<a href=\"sea-level/vladivostok\">31960 - Пост измерений уровня моря «Владивосток»\<\/a>");
+				map.addOverlay(placemark144);
+	//bounds.add(new YMaps.GeoPoint(131.900,43.110);
+	var placemark187 = new YMaps.Placemark(new YMaps.GeoPoint(130.8,42.65),{style: "example#customPoint"});
+				placemark187.name="\<a href=\"sea-level/posiet\">31969 - Пост измерений уровня моря \"Посьет\"\<\/a>";
+				placemark187.description="";
+				placemark187.setBalloonContent("\<a href=\"sea-level/posiet\">31969 - Пост измерений уровня моря \"Посьет\"\<\/a>");
+				map.addOverlay(placemark187);
+	//bounds.add(new YMaps.GeoPoint(130.8,42.65);
+	var placemark188 = new YMaps.Placemark(new YMaps.GeoPoint(156.483,51.483),{style: "example#customPoint"});
+				placemark188.name="\<a href=\"sea-level/ozernaya\">32594 - Пост измерений уровня моря \"Озерная\"\<\/a>";
+				placemark188.description="";
+				placemark188.setBalloonContent("\<a href=\"sea-level/ozernaya\">32594 - Пост измерений уровня моря \"Озерная\"\<\/a>");
+				map.addOverlay(placemark188);
+	//bounds.add(new YMaps.GeoPoint(156.483,51.483);
+	//map.setCenter(bounds.getCenter(), bounds.getMapZoom(map)-1);
+			});
+			</script><div class="base_list"><ul><li><a href="sea-level/sosunovo">Пост измерений уровня моря «Сосуново»</a></li><li><a href="sea-level/rud-pristan">Пост измерений уровня моря «Рудная Пристань»</a></li><li><a href="sea-level/petr-kamch">Пост измерений уровня моря «Петропавловск-Камчатский»</a></li><li><a href="sea-level/nikolskoe">Пост измерений уровня моря «Никольское»</a></li><li><a href="sea-level/semyachik">Пост измерений уровня моря «Семячик»</a></li><li><a href="sea-level/vodopodnaya">Пост измерений уровня моря «Водопадная»</a></li><li><a href="sea-level/preobragenie">Пост измерений уровня моря «Преображение»</a></li><li><a href="sea-level/korf">Пост измерений уровня моря «Корф (Тиличики)»</a></li><li><a href="sea-level/sovet-gavan">Пост измерений уровня моря «Советская гавань»</a></li><li><a href="sea-level/nahodka">Пост измерений уровня моря «Находка»</a></li><li><a href="sea-level/ossora">Пост измерений уровня моря «Оссора»</a></li><li><a href="sea-level/vladivostok">Пост измерений уровня моря «Владивосток»</a></li><li><a href="sea-level/posiet">Пост измерений уровня моря "Посьет"</a></li><li><a href="sea-level/ozernaya">Пост измерений уровня моря "Озерная"</a></li></ul></div></div>
+
+						</div>
+		</div>
+	</div>
+</section>
+<!--------------Content---------------
+<section id="content">
+	<div class="zerogrid">
+		<div class="row">
+			<div class="main-content">
+					<div class="col04" style="text-align:center;">
+						<img src="images/pf3.jpg" style="padding:5px; border:1px solid #ccc;"/>
+						<p><a href="#">PROJECT 01</a></p>
+					</div>
+					<div class="col04" style="text-align:center;">
+						<img src="images/pf4.jpg" style="padding:5px; border:1px solid #ccc;"/>
+						<p><a href="#">PROJECT 02</a></p>
+					</div>
+					<div class="col04" style="text-align:center;">
+						<img src="images/pf5.jpg" style="padding:5px; border:1px solid #ccc;"/>
+						<p><a href="#">PROJECT 03</a></p>
+					</div>
+					<div class="col04" style="text-align:center;">
+						<img src="images/pf6.jpg" style="padding:5px; border:1px solid #ccc;"/>
+						<p><a href="#">PROJECT 04</a></p>
+					</div>
+					<div class="col04" style="text-align:center;">
+						<img src="images/pf7.jpg" style="padding:5px; border:1px solid #ccc;"/>
+						<p><a href="#">PROJECT 05</a></p>
+					</div>
+					<div class="col04" style="text-align:center;">
+						<img src="images/pf8.jpg" style="padding:5px; border:1px solid #ccc;"/>
+						<p><a href="#">PROJECT 06</a></p>
+					</div>
+					<div class="col04" style="text-align:center;">
+						<img src="images/pf9.jpg" style="padding:5px; border:1px solid #ccc;"/>
+						<p><a href="#">PROJECT 07</a></p>
+					</div>
+					<div class="col04" style="text-align:center;">
+						<img src="images/pf10.jpg" style="padding:5px; border:1px solid #ccc;"/>
+						<p><a href="#">PROJECT 08</a></p>
+					</div>
+					<div class="col04" style="text-align:center;">
+						<img src="images/pf3.jpg" style="padding:5px; border:1px solid #ccc;"/>
+						<p><a href="#">PROJECT 01</a></p>
+					</div>
+					<div class="col04" style="text-align:center;">
+						<img src="images/pf4.jpg" style="padding:5px; border:1px solid #ccc;"/>
+						<p><a href="#">PROJECT 02</a></p>
+					</div>
+					<div class="col04" style="text-align:center;">
+						<img src="images/pf5.jpg" style="padding:5px; border:1px solid #ccc;"/>
+						<p><a href="#">PROJECT 03</a></p>
+					</div>
+					<div class="col04" style="text-align:center;">
+						<img src="images/pf6.jpg" style="padding:5px; border:1px solid #ccc;"/>
+						<p><a href="#">PROJECT 04</a></p>
+					</div>
+					<div class="col04" style="text-align:center;">
+						<img src="images/pf7.jpg" style="padding:5px; border:1px solid #ccc;"/>
+						<p><a href="#">PROJECT 05</a></p>
+					</div>
+					<div class="col04" style="text-align:center;">
+						<img src="images/pf8.jpg" style="padding:5px; border:1px solid #ccc;"/>
+						<p><a href="#">PROJECT 06</a></p>
+					</div>
+					<div class="col04" style="text-align:center;">
+						<img src="images/pf9.jpg" style="padding:5px; border:1px solid #ccc;"/>
+						<p><a href="#">PROJECT 07</a></p>
+					</div>
+					<div class="col04" style="text-align:center;">
+						<img src="images/pf10.jpg" style="padding:5px; border:1px solid #ccc;"/>
+						<p><a href="#">PROJECT 08</a></p>
+					</div>
+			</div>
+		</div>
+	</div>
+</section>
+-->
+
+
+<!--------------Footer--------------->
+<footer>
+	<div class="zerogrid">
+		<div class="row wrapper">
+			<section class="col-2-3">
+				<div class="heading">Полезные ссылки</div>
+				<div class="content">
+					<a href="http://www.mchs.ru">МЧС России</a><br>
+					<a href="http://www.mnr.gov.ru/">Минприроды России</a>
+				</div>
+			</section>
+			<section class="col-1-3">
+				<div class="heading">Наши ресурсы</div>
+				<div class="content">
+					<a href="http://www.rpatyphoon.ru">НПО Тайфун</a><br>
+					<a href="http://www.meteorf.">Росгидромет</a><br>
+<!--					<img src="images/icon1.gif" />
+					<img src="images/icon2.gif" />
+					<img src="images/icon3.gif" />
+					<img src="images/icon4.gif" />
+					<img src="images/icon5.gif" />-->
+				</div>
+			</section>
+		</div>
+	</div>
+	
+	<div id="copyright">
+	<p>©2012 - Российская служба предупреждения о цунами</p>
+	<!--<p><a href="http://www.zerotheme.com/432/free-responsive-html5-css3-website-templates.html" target="_blank">Free Responsive Html5 Templates</a> by Zerotheme.com</p>-->
+</div>
+</footer>
+
+</body></html>

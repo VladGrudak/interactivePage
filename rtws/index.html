@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Российская служба предупреждения о цунами</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+    <!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/zerogrid.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/responsiveslides.css" />
+	
+	<!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+		<script src="js/css3-mediaqueries.js"></script>
+	<![endif]-->
+	
+	<link href='./images/favicon.ico' rel='icon' type='image/x-icon'/>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/responsiveslides.js"></script>
+	<script>
+    $(function () {
+      $("#slider").responsiveSlides({
+        auto: true,
+        pager: false,
+        nav: true,
+        speed: 500,
+        maxwidth: 960,
+        namespace: "centered-btns"
+      });
+    });
+  </script>
+    
+</head>
+<body>
+<!--------------Header--------------->
+<header> 
+	<div id="logo"><a href=""><img src="./images/logo.png"/></a></div>
+	<div id="search">
+		<div class="button-search"></div>
+		<input type="text" value="Поиск..." onfocus="if (this.value == &#39;Search...&#39;) {this.value = &#39;&#39;;}" onblur="if (this.value == &#39;&#39;) {this.value = &#39;Search...&#39;;}">
+	</div>
+</header>
+
+<!--------------Navigation--------------->
+
+<nav>
+	<ul>
+		<li><a href="index.html">Главная</a></li>
+		<li><a href="blog.html">Новости</a></li>
+		<li><a href="gallery.html">Центры цунами</a></li>
+		<li><a href="single.html">События</a></li>
+		<li><a href="single.html">Документы</a></li>
+		<li><a href="single.html">О нас</a></li>
+	</ul>
+</nav>
+
+<!--------------Slideshow--------------->
+
+<section class="featured">
+	<div class="rslides_container">
+		<ul class="rslides" id="slider">
+			<li><img src="images/slide1.png"/></li>
+			<li><img src="images/slide2.png"/></li>
+			<li><img src="images/slide3.png"/></li>
+		</ul>
+	</div>
+</section>
+			
+<!--------------Content--------------->
+<section id="content">
+	<div class="zerogrid">
+		<div class="row">
+			<div class="main-content">
+				<div class="row">
+					<div class="col-1-3">
+						<section>
+							<div class="heading">
+								<h2><a href="blog.html">Измерения уровня моря</a></h2>
+							</div>
+							<div class="content">
+								<img src="images/icon1.jpg"/>
+								<p>Круглосуточный мониторинг состояния измерения уровня моря производится на четырнадцати постах. Изменения фиксируются в реальном времени.</p>
+							</div>
+						</section>
+					</div>
+					<div class="col-1-3">
+						<section>
+							<div class="heading">
+								<h2><a href="blog.html">Центры цунами</a></h2>
+							</div>
+							<div class="content">
+								<img src="images/icon1.png" width="72" height="80"/>
+								<p>Узнать подробнее о трёх центрах цунами: Приморском, Сахалинском и Камчатском.</p>
+							</div>
+						</section>
+					</div>
+					<div class="col-1-3">
+						<section>
+							<div class="heading">
+								<h2><a href="blog.html">События</a></h2>
+							</div>
+							<div class="content">
+								<img src="images/icon3.jpg"/>
+								<p>Последние зафиксированные события. Данные получены с автоматических постов, расположенных в близи активных районов.</p>
+							</div>
+						</section>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-2-3">
+						<article>
+							<div class="heading">
+								<h2><a href="blog.html">О нас</a></h2>
+							</div>
+							<div class="content">
+								<p>В рамках федеральной целевой программы «Снижение рисков и смягчение  последствий чрезвычайных ситуаций природного и техногенного характера в Российской Федерации до 2010 года» в 2006-2010 гг., при акивном участии МЧС России реализованы мероприятия по совершенствованию системы предупреждения о цунами.</p>
+								<p>В результате выполнения мероприятий разработаны проекты, включающие новые технологии и аппаратно-программные комплексы, которые внедрены в Сахалинской области, Камчатском и Приморском краях, проведена коренная модернизация российской системы предупреждения о цунами (СПЦ).</p>
+							</div>
+						</article>
+					</div>
+					<div class="sidebar col-1-3">
+						<section class="">
+							<div class="heading">Последнее измерение</div>
+							<div class="content">
+								<img src="images/img.png" />
+								<p>Индекс: 31866<br>
+								Наименование: Сосуново<br>
+								Координаты: 46.533° c.ш., 138.333° в.д.
+								</p>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--------------Footer--------------->
+<footer>
+	<div class="zerogrid">
+		<div class="row wrapper">
+			<section class="col-2-3">
+				<div class="heading">Полезные ссылки</div>
+				<div class="content">
+					<a href="http://www.mchs.ru">МЧС России</a><br>
+					<a href="http://www.mnr.gov.ru/">Минприроды России</a>
+				</div>
+			</section>
+			<section class="col-1-3">
+				<div class="heading">Наши ресурсы</div>
+				<div class="content">
+					<a href="http://www.rpatyphoon.ru">НПО Тайфун</a><br>
+					<a href="http://www.meteorf.">Росгидромет</a><br>
+<!--					<img src="images/icon1.gif" />
+					<img src="images/icon2.gif" />
+					<img src="images/icon3.gif" />
+					<img src="images/icon4.gif" />
+					<img src="images/icon5.gif" />-->
+				</div>
+			</section>
+		</div>
+	</div>
+	
+	<div id="login">
+		<a href="interactivepage.html">Вход для сотрудников</a>
+	</div>
+
+	<div id="copyright">
+	<p>©2012 - Российская служба предупреждения о цунами</p>
+	<!--<p><a href="http://www.zerotheme.com/432/free-responsive-html5-css3-website-templates.html" target="_blank">Free Responsive Html5 Templates</a> by Zerotheme.com</p>-->
+	</div>
+
+</footer>
+
+</body></html>
