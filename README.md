@@ -15,3 +15,4 @@ https://drive.google.com/file/d/14N_t-Sg4MzPklkeSr4ZLvwohY4qAWG1W/view?usp=shari
 
 Миша:
 * Разобраться с ГИТ
+* Развернуть Web сервер локально на компе.
