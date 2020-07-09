@@ -59,7 +59,7 @@
 <body>
 <!--------------Header--------------->
 <header> 
-	<div id="logo"><a href=""><img src="./images/logo.png"/></a></div>
+	<div id="logo"><a href="index.html"><img src="./images/logo.png"/></a></div>
 	<div id="search">
 		<div class="button-search"></div>
 		<input type="text" value="Поиск..." onfocus="if (this.value == &#39;Search...&#39;) {this.value = &#39;&#39;;}" onblur="if (this.value == &#39;&#39;) {this.value = &#39;Search...&#39;;}">
@@ -82,76 +82,88 @@
 <!--------------Content--------------->
 <section id="content">
 	<div class="zerogrid">
+
+<div class="row">
+	<div class="col-12">
+		<p style="margin-top: 15px; margin-left: 30px;">
+			<b>Список пользователей:</b> Иванов А.А., Петров Б.Б., Сидоров В.В.&nbsp&nbsp&nbsp&nbsp&nbsp <b>Пользователи онлайн:</b> <span style="color: green;">Иванов А.А., Петров Б.Б.</span>
+		</p>
+	</div>
+</div>
+<!--Чат-->		
 		<div class="row">
 					<div class="col">
 						<section>
 							<div class="heading">
-								<h2><a href="blog.html">ЧАТ</a></h2>
+								<h2>Чат</h2>
 							</div>
 							<div class="content">
-								<p>ПОЧАТИМСЯ, АЗАЗА</p>
+								<div id="msg-box">
+ 									<ul>
+  									</ul>
+								</div>
+							<form id="t-box" action="?" style="">
+  								Имя: <input type="text" class='name' style="width:100px;" >
+  								<input type="text" class='msg' style="width:100px;" >
+  								<input type="submit" value="Отправить" style="margin-top:5px;">
+							</form>
 							</div>
 						</section>
 					</div>
+
+<!--Таблица с телеграммами-->					
 					<div class="col">
 						<section>
 							<div class="heading">
-								<h2><a href="blog.html">СПИСОК ТЕЛЕГРАММ</a></h2>
+								<h2>Список телеграмм</h2>
 							</div>
-							<div class="content">
+							<div class="telegram">
 								<p>
 									<table border="2">
    											<tr>
-    											<th>Телеграмма - 1</th></p>
+    											<th><br>Телеграмма - 1<br><br></th></p>
     										</tr>
     										<tr>
-    											<th>Телеграмма - 2</th></p>
+    											<th><br>Телеграмма - 2<br><br></th></p>
     										</tr>
     										<tr>
-    											<th>Телеграмма - 3</th></p>
+    											<th><br>Телеграмма - 3<br><br></th></p>
     										</tr>
     										<tr>
-    											<th>Телеграмма - 4</th></p>
+    											<th><br>Телеграмма - 4<br><br></th></p>
     										</tr>
     										<tr>
-    											<th>Телеграмма - 5</th></p>
+    											<th><br>Телеграмма - 5<br><br></th></p>
     										</tr>
     										<tr>
-    											<th>Телеграмма - 6</th></p>
+    											<th><br>Телеграмма - 6<br><br></th></p>
     										</tr>
     										<tr>
-    											<th>Телеграмма - 7</th></p>
+    											<th><br>Телеграмма - 7<br><br></th></p>
     										</tr>
-    										<tr>
-    											<th>Телеграмма - 8</th></p>
-    										</tr>
-    										<tr>
-    											<th>Телеграмма - 9</th></p>
-    										</tr>
-    										<tr>
-    											<th>Телеграмма - 10</th></p>
-    										</tr>
-    								</table>
+       								</table>
 							</div>
 						</section>
 					</div>
 				</div>
+
+<!--Форма справки-->
 			<div class="row">
 				<div class="col-6">
 					<section>
 						<div class="heading">
 							<h2>Форма справки</h2>
-							<p>
-								<ul>
-									<li>Бла-бла-бла</li>
-									<li>Бла-бла-бла</li>
-									<li>Бла-бла-бла</li>
-									<li>Бла-бла-бла</li>
-									<li>Бла-бла-бла</li>
-									<li>Бла-бла-бла</li>
-									<li>Бла-бла-бла</li>
-								</ul>
-							</p>
+							<div class="content">
+								<div id="msg-box">
+							  		<ul>
+							  		</ul>
+								</div>
+								<form id="t-box" action="?" style="">
+ 							 		<input type="text" class='name' style="width:100px;" >
+ 							 		<input type="text" class='msg' style="width:100px;" >
+ 							 		<input type="submit" value="Подготовить справку" style="margin-top:5px;">
+								</form>
+							</div>
 						</div>
 					</section>
 				</div>
